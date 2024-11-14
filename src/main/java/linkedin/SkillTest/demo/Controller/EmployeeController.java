@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import linkedin.SkillTest.demo.Model.Criteria;
 import linkedin.SkillTest.demo.Model.GetEmployee;
 import linkedin.SkillTest.demo.Model.ORMEmployee;
 import linkedin.SkillTest.demo.Model.ServiceResponse;
@@ -31,33 +32,11 @@ public class EmployeeController {
         return new ResponseEntity<>(resp, HttpStatus.OK);
     }
 
-    @GetMapping("/getEmployeeById/{emp_id}/{pageIndex}/{pageSize}")
-    public @ResponseBody ResponseEntity<List<GetEmployee>> getEmployeeById(
-        @PathVariable(value = "emp_id") String emp_id,
-        @PathVariable(value = "pageIndex") String pageIndex,
-        @PathVariable(value = "pageSize") String pageSize
-        ) {
-        List<GetEmployee> resp = empService.getEmployeeById(emp_id, pageIndex, pageSize);
+    @GetMapping("/getEmployeeByCriteria")
+    public @ResponseBody ResponseEntity<List<GetEmployee>> getEmployeeByCriteria(
+        @RequestBody Criteria criteria) {
+        List<GetEmployee> resp = empService.getEmployeeByCriteria(criteria);
         return new ResponseEntity<List<GetEmployee>>(resp, HttpStatus.OK);
     }
 
-    @GetMapping("/getEmployeeByName/{name}/{pageIndex}/{pageSize}")
-    public @ResponseBody ResponseEntity<List<GetEmployee>> getEmployeeByName(
-        @PathVariable(value = "name") String name,
-        @PathVariable(value = "pageIndex") String pageIndex,
-        @PathVariable(value = "pageSize") String pageSize
-        ) {
-        List<GetEmployee> resp = empService.getEmployeeByName(name, pageIndex, pageSize);
-        return new ResponseEntity<List<GetEmployee>>(resp, HttpStatus.OK);
-    }
-
-    @GetMapping("/getEmployeeByAge/{age}/{pageIndex}/{pageSize}")
-    public @ResponseBody ResponseEntity<List<GetEmployee>> getEmployeeByAge(
-        @PathVariable(value = "age") String age,
-        @PathVariable(value = "pageIndex") String pageIndex,
-        @PathVariable(value = "pageSize") String pageSize
-        ) {
-        List<GetEmployee> resp = empService.getEmployeeByAge(age, pageIndex, pageSize);
-        return new ResponseEntity<List<GetEmployee>>(resp, HttpStatus.OK);
-    }
 }
