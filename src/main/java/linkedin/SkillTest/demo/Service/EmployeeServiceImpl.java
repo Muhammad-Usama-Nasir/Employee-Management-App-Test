@@ -12,19 +12,19 @@ import linkedin.SkillTest.demo.Model.ORMEmployee;
 import linkedin.SkillTest.demo.Model.ServiceResponse;
 
 @Service
-public class EmployeeServiceImpl implements EmployeeService{
+public class EmployeeServiceImpl implements EmployeeService {
 
-    @Autowired
-    private EmployeeDao employeeDao;
+	@Autowired
+	private EmployeeDao employeeDao;
 
-    @Override
-    public ServiceResponse createEmployee(ORMEmployee emp) {
-        return employeeDao.createEmployee(emp);
-    }
+	@Override
+	public ServiceResponse createEmployee(ORMEmployee emp) {
+		return employeeDao.createEmployee(emp);
+	}
 
-    @Override
-    public List<GetEmployee> getEmployeeByCriteria(Criteria criteria) {
-        return employeeDao.getEmployeeByCriteria(criteria);
-    }
+	@Override
+	public List<GetEmployee> getEmployeeByCriteria(Criteria criteriaList) {
+		return employeeDao.getEmployeeByCriteria(criteriaList);
+	}
 
 }

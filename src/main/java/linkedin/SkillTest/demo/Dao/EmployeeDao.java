@@ -9,8 +9,8 @@ import linkedin.SkillTest.demo.Model.ServiceResponse;
 
 public interface EmployeeDao {
 
-    ServiceResponse createEmployee(ORMEmployee emp);
+	ServiceResponse createEmployee(ORMEmployee emp);
 
-    List<GetEmployee> getEmployeeByCriteria(Criteria criteria);
+	List<GetEmployee> getEmployeeByCriteria(Criteria criteriaList);
 
 }
