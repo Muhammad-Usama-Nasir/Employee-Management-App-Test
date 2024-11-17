@@ -4,28 +4,46 @@ At the heart of my professional expertise is backend development, where I specia
 
 
 Employee Management Backend Service
+
 This backend service is designed to manage employee data efficiently, following best practices in scalability, security, and performance.
 
+
 Key Features:
+
 REST API Implementation
+
 Queries to list employees with optional filters, fetch details of a single employee, and retrieve paginated results.
+
 Mutations to add and update employee data.
 
+
 Data Model:
+
 Employee records are stored with fields such as ID, Name, Age, Class, Subjects, and Attendance.
 
+
 Pagination & Sorting:
+
 Integrated pagination and sorting for streamlined data retrieval.
 
+
 Authentication & Authorization:
+
+
 Role-based access control (RBAC):
+
 Admin: Full access to all features.
+
 Employee: Limited access based on assigned permissions.
 
+
 Performance Optimization:
+
 Implemented strategies to ensure efficient API responses even with large datasets.
 
+
 Technology Stack:
+
 Backend: Java, REST, SQL Server and Spring Boot.
 
 ## 🌐 Socials:
