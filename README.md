@@ -2,7 +2,31 @@
 Greetings! I am Muhammad Usama from Rawalpindi, Punjab, Pakistan. I hold a Bachelor's degree in IT, earned in 2022, and am currently pursuing a Master's in Computer Science. As a passionate and motivated professional, I have over 8 months of experience as a Backend Software Engineer, specializing in Java web development services. I am eager to explore opportunities to contribute my skills and grow in a dynamic team environment.
 At the heart of my professional expertise is backend development, where I specialize in crafting robust and scalable server-side applications using Java and Spring Boot. I bring a deep understanding of data access technologies, including Spring Data JPA and JDBC, paired with hands-on experience in optimizing SQL queries and managing MS SQL databases. With a strong foundation in technical skills, a relentless passion for problem-solving, and a commitment to continuous learning, I am dedicated to delivering backend solutions that align seamlessly with business objectives.
 
-This is a Test Project!
+
+Employee Management Backend Service
+This backend service is designed to manage employee data efficiently, following best practices in scalability, security, and performance.
+
+Key Features:
+REST API Implementation
+Queries to list employees with optional filters, fetch details of a single employee, and retrieve paginated results.
+Mutations to add and update employee data.
+
+Data Model:
+Employee records are stored with fields such as ID, Name, Age, Class, Subjects, and Attendance.
+
+Pagination & Sorting:
+Integrated pagination and sorting for streamlined data retrieval.
+
+Authentication & Authorization:
+Role-based access control (RBAC):
+Admin: Full access to all features.
+Employee: Limited access based on assigned permissions.
+
+Performance Optimization:
+Implemented strategies to ensure efficient API responses even with large datasets.
+
+Technology Stack:
+Backend: Java, REST, SQL Server and Spring Boot.
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/usama.wains_) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/muhammad-usama-bb135b172/) 
